@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
 
     private float speedModifier = 1.25f;
 
+    public bool derecha;
+
 
     private void Awake()
     {
@@ -29,6 +31,11 @@ public class PlayerMovement : MonoBehaviour
     {
         movementVector.x = Input.GetAxisRaw("Horizontal");
         movementVector.y = Input.GetAxisRaw("Vertical");
+
+        if (movementVector.x>0)
+            derecha = true;
+        else if (movementVector.x < 0)
+            derecha = false;
 
         if (movementVector.x == 0 && movementVector.y == 0)
         {

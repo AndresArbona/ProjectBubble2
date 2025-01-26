@@ -4,7 +4,8 @@ public class pickup : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        PlayerCharacter character = GetComponent<PlayerCharacter>();
+        Debug.Log("LLEGO!");
+        PlayerCharacter character = collision.GetComponent<PlayerCharacter>();
 
         if (character != null)
         {

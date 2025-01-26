@@ -2,19 +2,27 @@ using UnityEngine;
 
 public class ThrowingBubbleProjectile : MonoBehaviour
 {
-    Vector3 direction;
-    [SerializeField]float speed = 5;
+    Vector3 direction = Vector3.left;
+    
     [SerializeField] int damage = 5;
 
-    public void SetDirection(float dir_x, float dir_y)
-    {
-        direction = new Vector3 (dir_x, dir_y);
+    float velocidad = 1;
 
-        if(dir_x < 0)
+    public void SetDirection(bool derecha)
+    {
+        if (derecha)
         {
             Vector3 scale = transform.localScale;
-            scale.x = scale.x * -1;
+            scale.x = Mathf.Abs(scale.x);
             transform.localScale = scale;
+            direction = Vector3.right;
+        }
+        else
+        {
+            Vector3 scale = transform.localScale;
+            scale.x = -Mathf.Abs(scale.x);
+            transform.localScale = scale;
+            direction = Vector3.left;
         }
     }
 
@@ -22,7 +30,7 @@ public class ThrowingBubbleProjectile : MonoBehaviour
     bool hitDetected = false;
     private void Update()
     {
-        transform.position += direction * speed * Time.deltaTime;
+        transform.position += direction * velocidad * Time.deltaTime;
 
         if(Time.frameCount % 6 == 0)
         {

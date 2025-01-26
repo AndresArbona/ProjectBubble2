@@ -31,7 +31,7 @@ public class ThrowBubblesWeapon : MonoBehaviour
         GameObject thrownBubble = Instantiate(BubblePrefab);
 
         thrownBubble.transform.position = transform.position;
-        thrownBubble.GetComponent<ThrowingBubbleProjectile>().SetDirection(playerMovement.transform.position.x, 0f);
+        thrownBubble.GetComponent<ThrowingBubbleProjectile>().SetDirection(playerMovement.derecha);
     }
 
 }
