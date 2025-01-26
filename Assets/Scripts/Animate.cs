@@ -3,17 +3,25 @@ using UnityEngine;
 public class Animate : MonoBehaviour
 {
     
-    Animator animator;
+    Animator anim;
 
     public float horizontal;
+    public float Vertical;
+
+
     private void Awake()
     {
-        animator = GetComponentInChildren<Animator>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     private void Update()
     {
-        animator.SetFloat("Horizontal", horizontal);
+        AnimatePlayer();
     }
 
+    private void AnimatePlayer()
+    {
+        anim.SetFloat("HorizontalMovement", horizontal);
+        anim.SetFloat("VerticalMovement", Vertical);
+    }
 }

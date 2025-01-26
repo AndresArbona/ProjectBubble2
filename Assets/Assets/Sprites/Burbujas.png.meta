@@ -1,0 +1,398 @@
+fileFormatVersion: 2
+guid: 132dd53984cece34d928ba85808c3d94
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6879840507435275296
+    second: Burbujas_0
+  - first:
+      213: -6459601421955718522
+    second: Burbujas_1
+  - first:
+      213: -86079071418171383
+    second: Burbujas_2
+  - first:
+      213: -1199606254053733922
+    second: Burbujas_3
+  - first:
+      213: -4517561650640779745
+    second: Burbujas_4
+  - first:
+      213: 2230869090680246374
+    second: Burbujas_5
+  - first:
+      213: 7746507737670537397
+    second: Burbujas_6
+  - first:
+      213: 537671805452030719
+    second: Burbujas_7
+  - first:
+      213: -4247068221076420499
+    second: Burbujas_8
+  - first:
+      213: 5443038266179689908
+    second: Burbujas_9
+  - first:
+      213: -4678324859515465925
+    second: Burbujas_10
+  - first:
+      213: -4415900043445843598
+    second: Burbujas_11
+  - first:
+      213: 1932177952158959301
+    second: Burbujas_12
+  - first:
+      213: -9181889004073668431
+    second: Burbujas_13
+  - first:
+      213: -3621493966564118016
+    second: Burbujas_14
+  - first:
+      213: -5004601654437330619
+    second: Burbujas_15
+  - first:
+      213: 4619331402547713941
+    second: Burbujas_16
+  - first:
+      213: 3864153591438814497
+    second: Burbujas_17
+  - first:
+      213: -1792498260138158053
+    second: Burbujas_18
+  - first:
+      213: -4209391623235134238
+    second: Burbujas_19
+  - first:
+      213: 7672771783517829560
+    second: Burbujas_20
+  - first:
+      213: -6398087692117955730
+    second: Burbujas_21
+  - first:
+      213: -6251426823196733060
+    second: Burbujas_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 512
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Burbujas_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 799
+        width: 410
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 024d5059d7a1a7f50800000000000000
+      internalID: 6879840507435275296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burbujas_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 500
+        width: 300
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90046856a8f2ecef0800000000000000
+      internalID: -86079071418171383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burbujas_3
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 574
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed94accb7742a5fe0800000000000000
+      internalID: -1199606254053733922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burbujas_4
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 293
+        width: 154
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1601a22d956e41c0800000000000000
+      internalID: -4517561650640779745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burbujas_5
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 258
+        width: 284
+        height: 243
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 660156a4e93a5fe10800000000000000
+      internalID: 2230869090680246374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burbujas_9
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 84
+        width: 94
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bd9f72f67e898b40800000000000000
+      internalID: 5443038266179689908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burbujas_12
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 80
+        width: 68
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c6c6414c9970da10800000000000000
+      internalID: 1932177952158959301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Burbujas_19
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 62
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ec9098fe9c3595c0800000000000000
+      internalID: -4209391623235134238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f4d6bc00e0fe1364ca2f3a6ecb6fedc4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Burbujas_0: 6879840507435275296
+      Burbujas_1: -6459601421955718522
+      Burbujas_10: -4678324859515465925
+      Burbujas_11: -4415900043445843598
+      Burbujas_12: 1932177952158959301
+      Burbujas_13: -9181889004073668431
+      Burbujas_14: -3621493966564118016
+      Burbujas_15: -5004601654437330619
+      Burbujas_16: 4619331402547713941
+      Burbujas_17: 3864153591438814497
+      Burbujas_18: -1792498260138158053
+      Burbujas_19: -4209391623235134238
+      Burbujas_2: -86079071418171383
+      Burbujas_20: 7672771783517829560
+      Burbujas_21: -6398087692117955730
+      Burbujas_22: -6251426823196733060
+      Burbujas_3: -1199606254053733922
+      Burbujas_4: -4517561650640779745
+      Burbujas_5: 2230869090680246374
+      Burbujas_6: 7746507737670537397
+      Burbujas_7: 537671805452030719
+      Burbujas_8: -4247068221076420499
+      Burbujas_9: 5443038266179689908
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
