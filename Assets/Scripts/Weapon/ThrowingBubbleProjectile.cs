@@ -6,7 +6,7 @@ public class ThrowingBubbleProjectile : MonoBehaviour
     
     [SerializeField] int damage = 5;
 
-    float velocidad = 1;
+    float velocidad = 10;
 
     public void SetDirection(bool derecha)
     {

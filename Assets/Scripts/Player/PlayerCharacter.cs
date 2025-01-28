@@ -1,12 +1,15 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerCharacter : MonoBehaviour
 {
     //VARIABLES
 
-    [SerializeField]private  int maxHealth = 1000;
-    public int currentHealth;
+    [SerializeField] public  float maxHealth = 10000;
+    public float currentHealth;
+    [SerializeField] private LifeBar LifeBar;
+    [SerializeField] private GameManager GameManager;
 
     [HideInInspector] public Level level;
 
@@ -15,18 +18,20 @@ public class PlayerCharacter : MonoBehaviour
     private void Awake()
     {
         currentHealth = maxHealth;
+        LifeBar.ReadyHealthBar();
         level = GetComponent<Level>();
     }
 
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        LifeBar.ChangeLifeAct();
         Debug.Log($"{damage} taken, current health: {currentHealth}");
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
 
         if (currentHealth <= 0)
         {
-            Debug.Log("Defeat");
+            SceneManager.LoadScene("Defeat");
         }
     }
 }

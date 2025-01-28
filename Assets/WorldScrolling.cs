@@ -4,12 +4,11 @@ public class WorldScrolling : MonoBehaviour
 {
     [SerializeField] Transform playerTransform;
     Vector2Int currentTilePosition = new Vector2Int(0,0);
-    Vector2Int currentPlayerTilePosition;
     Vector2Int onTileGridPosition;
     [SerializeField] Vector2Int playerTilePosition;
 
 
-    [SerializeField] float tileSize = 6.25f;
+    [SerializeField] float tileSize = 12.5f;
     GameObject[,] terrainTile;
 
     [SerializeField] int terrainTileHorizontalCount;
@@ -26,14 +25,19 @@ public class WorldScrolling : MonoBehaviour
 
     private void Update()
     {
-        currentTilePosition.x =(int)(playerTransform.position.x / tileSize);
-        currentTilePosition.y =(int)(playerTransform.position.y / tileSize);
+        playerTilePosition.x =(int)(playerTransform.position.x / tileSize);
+        playerTilePosition.y =(int)(playerTransform.position.y / tileSize);
+
+        playerTilePosition.x -= playerTransform.position.x < 0 ? 1: 0;
+        playerTilePosition.y -= playerTransform.position.y < 0 ? 1: 0;
 
         if (currentTilePosition != playerTilePosition) { 
 
             currentTilePosition = playerTilePosition;
 
-            UpdateOnTileGridPlayerPosition();
+            onTileGridPosition.x = CalculatePositionOnAxis(onTileGridPosition.x, true);
+            onTileGridPosition.y = CalculatePositionOnAxis(onTileGridPosition.y, false);
+
             UpdateTilesOnScreen();
         }
     }
@@ -43,7 +47,7 @@ public class WorldScrolling : MonoBehaviour
         terrainTile[tilePosition.x, tilePosition.y] = tileGameObject;
     }
 
-    public int CalculatePositionOnAxisWithWrap(int currentValue, bool horizontal)
+    public int CalculatePositionOnAxis(int currentValue, bool horizontal)
     {
 
         if (horizontal) 
@@ -54,11 +58,13 @@ public class WorldScrolling : MonoBehaviour
             }
             else
             {
+                currentValue += 1;
                 currentValue = terrainTileHorizontalCount - 1 
                     + currentValue % terrainTileHorizontalCount;
             }
 
-        } else 
+        } 
+        else 
         {
             if (currentValue >= 0)
             {
@@ -66,6 +72,7 @@ public class WorldScrolling : MonoBehaviour
             }
             else
             {
+                currentValue += 1;
                 currentValue = terrainTileVerticalCount - 1
                     + currentValue % terrainTileVerticalCount;
             }
@@ -75,13 +82,24 @@ public class WorldScrolling : MonoBehaviour
 
     public void UpdateTilesOnScreen()
     {
-        for (int pov_x = 0; pov_x < fieldOfVisionWidth; pov_x++) 
+        for (int pov_x = -(fieldOfVisionWidth/2); pov_x <= fieldOfVisionWidth/2; pov_x++) 
         { 
-            for(int pov_y = 0; pov_y < fieldOfVisionHeight; pov_y++)
+            for(int pov_y = -(fieldOfVisionHeight/2); pov_y <= fieldOfVisionHeight/2; pov_y++)
             {
+                int tileToUpdate_x = CalculatePositionOnAxis(playerTilePosition.x + pov_x, true);
+                int tileToUpdate_y = CalculatePositionOnAxis(playerTilePosition.y + pov_y, false);
 
+                GameObject tile = terrainTile[tileToUpdate_x, tileToUpdate_y];
+                tile.transform.position = CalculateTilePosition(
+                    playerTilePosition.x + pov_x,
+                    playerTilePosition.y + pov_y);
             }
 
         }    
+    }
+
+    public Vector3 CalculateTilePosition(int x, int y)
+    {
+        return new Vector3(x * tileSize, y * tileSize,0.0f);
     }
 }
